@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${AS_HIDE_VERSION}",
+	"name": "as_hide",
+	"description": "Hide mode for admins: 'mm_hide' (console) or '!hide' (chat, needs @admin/hide) moves the caller off every team (spectator, then none) so they disappear from the game while staying connected; using it again, or trying to join a team, puts them back. While a hidden admin tries to join a team the join is stopped and the hide mode is switched off. A port of the Metamod:Source module 'Hide' of the Pisex cs2-admin_system plugin.",
+	"author": "Pisex, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/as_hide",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "admin_system",
+			"constraints": ">=1.0.0"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	],
+	"methods": []
+}
